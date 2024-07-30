@@ -8,7 +8,7 @@ RUN apt-get update -y && apt upgrade -y && \
     && rm -rf /var/lib/apt/lists/* && apt-get autoclean -y && apt-get autoremove -y
 
 WORKDIR /root
-RUN npm install -g corepack
+RUN npm install -g corepack pnpm
 WORKDIR /root/prtl-meet
 COPY . /root/prtl-meet/
 RUN corepack install
