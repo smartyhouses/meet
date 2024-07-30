@@ -11,7 +11,7 @@ WORKDIR /root
 RUN npm install -g corepack pnpm
 WORKDIR /root/prtl-meet
 COPY . /root/prtl-meet/
-RUN corepack install
+RUN corepack install pnpm
 RUN pnpm install
 RUN pnpm build
 EXPOSE 3000
