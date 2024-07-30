@@ -9,8 +9,8 @@ RUN apt-get update -y && apt upgrade -y && \
 
 WORKDIR /root
 RUN npm install -g corepack
-WORKDIR /root/prtl-web
-COPY . /root/prtl-web/
+WORKDIR /root/prtl-meet
+COPY . /root/prtl-meet/
 RUN corepack install
 RUN pnpm install
 RUN pnpm build
