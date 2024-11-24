@@ -112,7 +112,7 @@ function CustomConnectionTab(props: { label: string }) {
         id="serverUrl"
         name="serverUrl"
         type="url"
-        placeholder="LiveKit Server URL: wss://*.livekit.cloud"
+        placeholder="Portal Server URL: wss://*.livekit.cloud"
         required
       />
       <textarea
@@ -167,13 +167,13 @@ export default function Page() {
         <div className="header">
           <img src="/images/livekit-meet-home.svg" alt="LiveKit Meet" width="360" height="45" />
           <h2>
-            Open source video conferencing app built on{' '}
-            <a href="https://github.com/livekit/components-js?ref=meet" rel="noopener">
+            Аудио и видеозвонки с людьми и ИИ{' '}
+            <a href="https://portalos.ru" rel="noopener">
               LiveKit&nbsp;Components
             </a>
             ,{' '}
-            <a href="https://livekit.io/cloud?ref=meet" rel="noopener">
-              LiveKit&nbsp;Cloud
+            <a href="https://portalos.ru" rel="noopener">
+              Portal&nbsp;Cloud
             </a>{' '}
             and Next.js.
           </h2>
@@ -186,15 +186,10 @@ export default function Page() {
         </Suspense>
       </main>
       <footer data-lk-theme="default">
-        Hosted on{' '}
-        <a href="https://livekit.io/cloud?ref=meet" rel="noopener">
-          LiveKit Cloud
+        Сделано людьми в {' '}
+        <a href="https://portalos.ru" rel="noopener">
+          АО Портал
         </a>
-        . Source code on{' '}
-        <a href="https://github.com/livekit/meet?ref=meet" rel="noopener">
-          GitHub
-        </a>
-        .
       </footer>
     </>
   );
