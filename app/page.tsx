@@ -165,17 +165,16 @@ export default function Page() {
     <>
       <main className={styles.main} data-lk-theme="default">
         <div className="header">
-          <img src="/images/livekit-meet-home.svg" alt="LiveKit Meet" width="360" height="45" />
+          <img src="https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/rings-1_Portal_Base.svg" alt="LiveKit Meet" width="360" height="45" />
           <h2>
             Аудио и видеозвонки с людьми и ИИ{' '}
             <a href="https://portalos.ru" rel="noopener">
-              Portal&nbsp;Os
+              Portal&nbsp;OS
             </a>
             ,{' '}
             <a href="https://portalos.ru" rel="noopener">
               Portal&nbsp;Cloud
             </a>{' '}
-            and Next.js.
           </h2>
         </div>
         <Suspense fallback="Loading">
