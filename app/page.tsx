@@ -169,7 +169,7 @@ export default function Page() {
           <h2>
             Аудио и видеозвонки с людьми и ИИ{' '}
             <a href="https://portalos.ru" rel="noopener">
-              Poryal&nbsp;Os
+              Portal&nbsp;Os
             </a>
             ,{' '}
             <a href="https://portalos.ru" rel="noopener">
