@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://meet.livekit.io',
+    url: 'https://meet.prtl.cc',
     images: [
       {
-        url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
+        url: 'https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/Portal_224.png',
         width: 2000,
         height: 1000,
         type: 'image/png',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   icons: {
     icon: {
       rel: 'icon',
-      url: '/favicon.ico',
+      url: 'https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/favicon.ico',
     },
     apple: [
       {
