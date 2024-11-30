@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@datadog/browser-logs':
         specifier: ^5.23.3
-        version: 5.30.1
+        version: 5.32.0
       '@livekit/components-react':
-        specifier: 2.6.8
-        version: 2.6.8(@livekit/krisp-noise-filter@0.2.13(livekit-client@2.6.2))(livekit-client@2.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tslib@2.7.0)
+        specifier: 2.6.9
+        version: 2.6.9(@livekit/krisp-noise-filter@0.2.13(livekit-client@2.7.0))(livekit-client@2.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tslib@2.7.0)
       '@livekit/components-styles':
         specifier: 1.1.4
         version: 1.1.4
       '@livekit/krisp-noise-filter':
         specifier: 0.2.13
-        version: 0.2.13(livekit-client@2.6.2)
+        version: 0.2.13(livekit-client@2.7.0)
       livekit-client:
-        specifier: 2.6.2
-        version: 2.6.2
+        specifier: 2.7.0
+        version: 2.7.0
       livekit-server-sdk:
         specifier: 2.8.1
         version: 2.8.1
@@ -66,13 +66,13 @@ packages:
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
 
-  '@datadog/browser-core@5.30.1':
-    resolution: {integrity: sha512-PE0evgMjGY+jogkzkkQUxkPl3kynoT0GCqOAT+sf8+A9tqGIvD8jFOE7FVAO6Y2Cf6HXT6SxrFcAiBWqNmKq5w==}
+  '@datadog/browser-core@5.32.0':
+    resolution: {integrity: sha512-+RnQZRda/XwjP2v8TZHIIbZItS1xlRYVs7OmueaA+/MItj0DiL8hZ4uIj7eLsNUXGS0qsiGHXWkaBZE2HfWuvQ==}
 
-  '@datadog/browser-logs@5.30.1':
-    resolution: {integrity: sha512-1sbfcq8LWHi4d9k4Xs/Dl+/GZB5zWCvRJxN8Ov5GxDpZHF7XsL89Vfn5heJkuZ54QtcofzEeUfctY1sMWmN+Mw==}
+  '@datadog/browser-logs@5.32.0':
+    resolution: {integrity: sha512-z6LNKUVOI81+0U1XRXMaqs25LqKwwZWg+1PjXbpM0dScQ+4jahPBNFub07L8YaHcmOoF+CEHwzmMIBWs+vWNng==}
     peerDependencies:
-      '@datadog/browser-rum': 5.30.1
+      '@datadog/browser-rum': 5.32.0
     peerDependenciesMeta:
       '@datadog/browser-rum':
         optional: true
@@ -176,8 +176,8 @@ packages:
       livekit-client: ^2.5.7
       tslib: ^2.6.2
 
-  '@livekit/components-react@2.6.8':
-    resolution: {integrity: sha512-G6P+mrOyBiAnHjbmBTG28CxA6AT7wXT6/5dqu7M7uZAlvOCDKhPjhOs65awDQvaFlTxd/JlND75fa9d+oSbvIA==}
+  '@livekit/components-react@2.6.9':
+    resolution: {integrity: sha512-j43i/Dm8dlI2jxv5wv0s+69QPVqVEjg0y2tyznfs/7RDcaIZsIIzNijPu1kLditerzvzQdRsOgFQ3UWONcTkGA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@livekit/krisp-noise-filter': ^0.2.12
@@ -564,8 +564,8 @@ packages:
   caniuse-lite@1.0.30001667:
     resolution: {integrity: sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==}
 
-  caniuse-lite@1.0.30001680:
-    resolution: {integrity: sha512-rPQy70G6AGUMnbwS1z6Xg+RkHYPAi18ihs47GH0jcxIG7wArmPgY3XbS2sRdBbxJljp3thdT8BIqv9ccCypiPA==}
+  caniuse-lite@1.0.30001684:
+    resolution: {integrity: sha512-G1LRwLIQjBQoyq0ZJGqGIJUXzJ8irpbjHLpVRXDvBEScFJ9b17sgK6vlx0GAJFE21okD7zXl08rRRUfq6HdoEQ==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -656,8 +656,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.62:
-    resolution: {integrity: sha512-t8c+zLmJHa9dJy96yBZRXGQYoiCEnHYgFwn1asvSPZSUdVxnB62A4RASd7k41ytG3ErFBA0TpHlKg9D9SQBmLg==}
+  electron-to-chromium@1.5.65:
+    resolution: {integrity: sha512-PWVzBjghx7/wop6n22vS2MLU8tKGd4Q91aCEGhG/TYmW6PP5OcSXcdnxTe1NNt0T66N8D6jxh4kC8UsdzOGaIw==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1153,8 +1153,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  livekit-client@2.6.2:
-    resolution: {integrity: sha512-SqXNHLgk2ZZOZyeHLXFAVAl+FVdSI+NK39LvIYstqS5X6IE5aCPlK4FqXY4l3aHpSft/BC/TR1CFGOq20ONkMA==}
+  livekit-client@2.7.0:
+    resolution: {integrity: sha512-4vjfSReFNAUD+2oLUz9qFRWztJaI/+AexpOmCgizNsPYpvvqgAvEGxapnhuAug9uP7JVYaKPXaTCq90MWZoDHg==}
 
   livekit-server-sdk@2.8.1:
     resolution: {integrity: sha512-l8egXU10jPuRJM2Df9Gk/KPEk6tBV0JEGG19cD5QeQtyIMgqULCCd/5yyG2FRvcWRf7pEyZZMXi63zDn7uaKHQ==}
@@ -1736,11 +1736,11 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
-  '@datadog/browser-core@5.30.1': {}
+  '@datadog/browser-core@5.32.0': {}
 
-  '@datadog/browser-logs@5.30.1':
+  '@datadog/browser-logs@5.32.0':
     dependencies:
-      '@datadog/browser-core': 5.30.1
+      '@datadog/browser-core': 5.32.0
 
   '@eslint-community/eslint-utils@4.4.0(eslint@9.14.0)':
     dependencies:
@@ -1838,31 +1838,31 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@livekit/components-core@0.11.10(livekit-client@2.6.2)(tslib@2.7.0)':
+  '@livekit/components-core@0.11.10(livekit-client@2.7.0)(tslib@2.7.0)':
     dependencies:
       '@floating-ui/dom': 1.6.11
-      livekit-client: 2.6.2
+      livekit-client: 2.7.0
       loglevel: 1.9.1
       rxjs: 7.8.1
       tslib: 2.7.0
 
-  '@livekit/components-react@2.6.8(@livekit/krisp-noise-filter@0.2.13(livekit-client@2.6.2))(livekit-client@2.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tslib@2.7.0)':
+  '@livekit/components-react@2.6.9(@livekit/krisp-noise-filter@0.2.13(livekit-client@2.7.0))(livekit-client@2.7.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tslib@2.7.0)':
     dependencies:
-      '@livekit/components-core': 0.11.10(livekit-client@2.6.2)(tslib@2.7.0)
+      '@livekit/components-core': 0.11.10(livekit-client@2.7.0)(tslib@2.7.0)
       clsx: 2.1.1
-      livekit-client: 2.6.2
+      livekit-client: 2.7.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.7.0
       usehooks-ts: 3.1.0(react@18.3.1)
     optionalDependencies:
-      '@livekit/krisp-noise-filter': 0.2.13(livekit-client@2.6.2)
+      '@livekit/krisp-noise-filter': 0.2.13(livekit-client@2.7.0)
 
   '@livekit/components-styles@1.1.4': {}
 
-  '@livekit/krisp-noise-filter@0.2.13(livekit-client@2.6.2)':
+  '@livekit/krisp-noise-filter@0.2.13(livekit-client@2.7.0)':
     dependencies:
-      livekit-client: 2.6.2
+      livekit-client: 2.7.0
 
   '@livekit/mutex@1.0.0': {}
 
@@ -2246,8 +2246,8 @@ snapshots:
 
   browserslist@4.24.2:
     dependencies:
-      caniuse-lite: 1.0.30001680
-      electron-to-chromium: 1.5.62
+      caniuse-lite: 1.0.30001684
+      electron-to-chromium: 1.5.65
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -2278,7 +2278,7 @@ snapshots:
 
   caniuse-lite@1.0.30001667: {}
 
-  caniuse-lite@1.0.30001680: {}
+  caniuse-lite@1.0.30001684: {}
 
   chalk@4.1.2:
     dependencies:
@@ -2378,7 +2378,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.62: {}
+  electron-to-chromium@1.5.65: {}
 
   emoji-regex@8.0.0: {}
 
@@ -3023,7 +3023,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  livekit-client@2.6.2:
+  livekit-client@2.7.0:
     dependencies:
       '@livekit/mutex': 1.0.0
       '@livekit/protocol': 1.24.0
