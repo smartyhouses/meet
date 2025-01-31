@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://meet.prtl.cc',
+    url: 'https://meet.portalos.ru',
     images: [
       {
         url: 'https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/Portal_224.png',
