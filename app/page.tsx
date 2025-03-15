@@ -112,7 +112,7 @@ function CustomConnectionTab(props: { label: string }) {
         id="serverUrl"
         name="serverUrl"
         type="url"
-        placeholder="Portal Server URL: wss://*.livekit.cloud"
+        placeholder="Portal Server URL: wss://*.portalos.ru"
         required
       />
       <textarea
