@@ -5,11 +5,11 @@ import type { Metadata, Viewport } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'LiveKit Meet | Conference app build with LiveKit open source',
+    default: 'Портал звонки — аудио и видеозвонки с людьми и ИИ-агентами',
     template: '%s',
   },
   description:
-    'LiveKit is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications.',
+    'Портал звонки — аудио и видеозвонки с людьми и ИИ-агентами',
   twitter: {
     creator: '@livekitted',
     site: '@livekitted',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-    siteName: 'LiveKit Meet',
+    siteName: 'Portal Meet',
   },
   icons: {
     icon: {
