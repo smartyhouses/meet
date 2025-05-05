@@ -39,7 +39,6 @@ const nextConfig = {
     // when true, every image will be unoptimized
     unoptimized: false,
   },
-}
   webpack: (config, { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }) => {
     // Important: return the modified config
     config.module.rules.push({
