@@ -8,13 +8,13 @@ import {
 } from '@livekit/components-react';
 import { BackgroundBlur, VirtualBackground } from '@livekit/track-processors';
 import { isLocalTrack, LocalTrackPublication, Track } from 'livekit-client';
-//import Desk from '../public/background-images/samanthaunsplash.jpg';
-//import Nature from '../public/background-images/aliunsplash.jpg';
+//import Desk from '../public/background-images/samantha-gades-BlIhVfXbi9s-unsplash.jpg';
+//import Nature from '../public/background-images/ali-kazal-tbw_KQE3Cbg-unsplash.jpg';
 
 // Background image paths
 const BACKGROUND_IMAGES = [
-  { name: 'Desk', path: "Desk" },
-  { name: 'Nature', path: "Nature" },
+  { name: 'Desk', path: 'Desk' },
+  { name: 'Nature', path: 'Nature' },
 ];
 
 // Background options
@@ -45,7 +45,6 @@ export function CameraSettings() {
     if (type === 'image' && imagePath) {
       setVirtualBackgroundImagePath(imagePath);
     } else if (type !== 'image') {
-    if (type !== 'image') {
       setVirtualBackgroundImagePath(null);
     }
   };
