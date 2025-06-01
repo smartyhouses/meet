@@ -6,18 +6,18 @@ import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Portal | Conference app build with LiveKit open source',
+    default: 'Portal Meet',
     template: '%s',
   },
   description:
-    'Portal',
+    'Portal Meet',
   twitter: {
-    creator: '@portalos',
-    site: '@portalos',
+    creator: '@livekitted',
+    site: '@livekitted',
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://meet.portals.ru',
+    url: 'https://www.portalos.ru',
     images: [
       {
         url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
