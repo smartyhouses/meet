@@ -25,14 +25,14 @@ export function CameraSettings() {
   const [backgroundType, setBackgroundType] = React.useState<BackgroundType>(
     (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'background-blur'
       ? 'blur'
-      : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background'
+      : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background' ,
       //? 'image'
       //: 'none',
   );
 
-  //const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
-  //  null,
-  //);
+  const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
+    null,
+  );
 
   const camTrackRef: TrackReference | undefined = React.useMemo(() => {
     return cameraTrack
