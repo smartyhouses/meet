@@ -8,17 +8,17 @@ import {
 } from '@livekit/components-react';
 import { BackgroundBlur, VirtualBackground } from '@livekit/track-processors';
 import { isLocalTrack, LocalTrackPublication, Track } from 'livekit-client';
-import Desk from '../public/background-images/samanthaunsplash.jpg';
-import Nature from '../public/background-images/aliunsplash.jpg';
+//import Desk from '../public/background-images/samanthaunsplash.jpg';
+//import Nature from '../public/background-images/aliunsplash.jpg';
 
 // Background image paths
-const BACKGROUND_IMAGES = [
-  { name: 'Desk', path: Desk },
-  { name: 'Nature', path: Nature },
-];
+//const BACKGROUND_IMAGES = [
+//  { name: 'Desk', path: Desk },
+//  { name: 'Nature', path: Nature },
+//];
 
 // Background options
-type BackgroundType = 'none' | 'blur' | 'image';
+type BackgroundType = 'none' | 'blur'; // | 'image';
 
 export function CameraSettings() {
   const { cameraTrack, localParticipant } = useLocalParticipant();
@@ -26,13 +26,13 @@ export function CameraSettings() {
     (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'background-blur'
       ? 'blur'
       : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background'
-      ? 'image'
+      //? 'image'
       : 'none',
   );
 
-  const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
-    null,
-  );
+  //const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
+  //  null,
+  //);
 
   const camTrackRef: TrackReference | undefined = React.useMemo(() => {
     return cameraTrack
@@ -42,9 +42,10 @@ export function CameraSettings() {
 
   const selectBackground = (type: BackgroundType, imagePath?: string) => {
     setBackgroundType(type);
-    if (type === 'image' && imagePath) {
-      setVirtualBackgroundImagePath(imagePath);
-    } else if (type !== 'image') {
+    //if (type === 'image' && imagePath) {
+    //  setVirtualBackgroundImagePath(imagePath);
+    //} else if (type !== 'image') {
+    if (type !== 'image') {
       setVirtualBackgroundImagePath(null);
     }
   };
@@ -53,8 +54,8 @@ export function CameraSettings() {
     if (isLocalTrack(cameraTrack?.track)) {
       if (backgroundType === 'blur') {
         cameraTrack.track?.setProcessor(BackgroundBlur());
-      } else if (backgroundType === 'image' && virtualBackgroundImagePath) {
-        cameraTrack.track?.setProcessor(VirtualBackground(virtualBackgroundImagePath));
+      //} else if (backgroundType === 'image' && virtualBackgroundImagePath) {
+      //  cameraTrack.track?.setProcessor(VirtualBackground(virtualBackgroundImagePath));
       } else {
         cameraTrack.track?.stopProcessor();
       }
