@@ -27,7 +27,7 @@ export function CameraSettings() {
       ? 'blur'
       : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background'
       //? 'image'
-      : 'none',
+      //: 'none',
   );
 
   //const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
