@@ -12,22 +12,22 @@ import { isLocalTrack, LocalTrackPublication, Track } from 'livekit-client';
 //import Nature from '../public/background-images/aliunsplash.jpg';
 
 // Background image paths
-//const BACKGROUND_IMAGES = [
-//  { name: 'Desk', path: Desk },
-//  { name: 'Nature', path: Nature },
-//];
+const BACKGROUND_IMAGES = [
+  { name: 'Desk', path: "Desk" },
+  { name: 'Nature', path: "Nature" },
+];
 
 // Background options
-type BackgroundType = 'none' | 'blur'; // | 'image';
+type BackgroundType = 'none' | 'blur' | 'image';
 
 export function CameraSettings() {
   const { cameraTrack, localParticipant } = useLocalParticipant();
   const [backgroundType, setBackgroundType] = React.useState<BackgroundType>(
     (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'background-blur'
       ? 'blur'
-      : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background' ,
-      //? 'image'
-      //: 'none',
+      : (cameraTrack as LocalTrackPublication)?.track?.getProcessor()?.name === 'virtual-background'
+      ? 'image'
+      : 'none',
   );
 
   const [virtualBackgroundImagePath, setVirtualBackgroundImagePath] = React.useState<string | null>(
@@ -42,9 +42,9 @@ export function CameraSettings() {
 
   const selectBackground = (type: BackgroundType, imagePath?: string) => {
     setBackgroundType(type);
-    //if (type === 'image' && imagePath) {
-    //  setVirtualBackgroundImagePath(imagePath);
-    //} else if (type !== 'image') {
+    if (type === 'image' && imagePath) {
+      setVirtualBackgroundImagePath(imagePath);
+    } else if (type !== 'image') {
     if (type !== 'image') {
       setVirtualBackgroundImagePath(null);
     }
@@ -54,8 +54,8 @@ export function CameraSettings() {
     if (isLocalTrack(cameraTrack?.track)) {
       if (backgroundType === 'blur') {
         cameraTrack.track?.setProcessor(BackgroundBlur());
-      //} else if (backgroundType === 'image' && virtualBackgroundImagePath) {
-      //  cameraTrack.track?.setProcessor(VirtualBackground(virtualBackgroundImagePath));
+      } else if (backgroundType === 'image' && virtualBackgroundImagePath) {
+        cameraTrack.track?.setProcessor(VirtualBackground(virtualBackgroundImagePath));
       } else {
         cameraTrack.track?.stopProcessor();
       }
