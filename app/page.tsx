@@ -54,7 +54,7 @@ function DemoMeetingTab(props: { label: string }) {
   };
   return (
     <div className={styles.tabContent}>
-      <p style={{ margin: 0 }}>Try Portal Meet for free with our live demo project.</p>
+      <p style={{ margin: 0 }}>Попробуйте Portal Meet бесплатно.</p>
       <button style={{ marginTop: '1rem' }} className="lk-button" onClick={startMeeting}>
         Start Meeting
       </button>
@@ -66,11 +66,11 @@ function DemoMeetingTab(props: { label: string }) {
             checked={e2ee}
             onChange={(ev) => setE2ee(ev.target.checked)}
           ></input>
-          <label htmlFor="use-e2ee">Enable end-to-end encryption</label>
+          <label htmlFor="use-e2ee">Включить шифрование</label>
         </div>
         {e2ee && (
           <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-            <label htmlFor="passphrase">Passphrase</label>
+            <label htmlFor="passphrase">Пароль</label>
             <input
               id="passphrase"
               type="password"
@@ -106,7 +106,7 @@ function CustomConnectionTab(props: { label: string }) {
   return (
     <form className={styles.tabContent} onSubmit={onSubmit}>
       <p style={{ marginTop: 0 }}>
-        Connect Portal Meet with a custom server using Cloud or local Server.
+        Connect Portal Meet with your server.
       </p>
       <input
         id="serverUrl"
@@ -131,11 +131,11 @@ function CustomConnectionTab(props: { label: string }) {
             checked={e2ee}
             onChange={(ev) => setE2ee(ev.target.checked)}
           ></input>
-          <label htmlFor="use-e2ee">Enable end-to-end encryption</label>
+          <label htmlFor="use-e2ee">Включить шифрование</label>
         </div>
         {e2ee && (
           <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-            <label htmlFor="passphrase">Passphrase</label>
+            <label htmlFor="passphrase">Пароль</label>
             <input
               id="passphrase"
               type="password"
@@ -165,28 +165,24 @@ export default function Page() {
     <>
       <main className={styles.main} data-lk-theme="default">
         <div className="header">
-          <img src="https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/rings-1_Portal_Base.svg" alt="LiveKit Meet" width="360" height="45" />
+          <img src="https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/rings-1_Portal_Base.svg" alt="Portal Meet" width="360" height="45" />
           <h2>
             Аудио и видеозвонки с людьми и ИИ{' '}
-            <a href="https://portalos.ru" rel="noopener">
+            <a href="https://www.portalos.ru" rel="noopener">
               Portal&nbsp;OS
-            </a>
-            ,{' '}
-            <a href="https://portalos.ru" rel="noopener">
-              Portal&nbsp;Cloud
             </a>{' '}
           </h2>
         </div>
-        <Suspense fallback="Loading">
+        <Suspense fallback="Загрузка">
           <Tabs>
-            <DemoMeetingTab label="Demo" />
+            <DemoMeetingTab label="Демо" />
             <CustomConnectionTab label="Custom" />
           </Tabs>
         </Suspense>
       </main>
       <footer data-lk-theme="default">
         Сделано людьми в {' '}
-        <a href="https://portalos.ru" rel="noopener">
+        <a href="https://www.portalos.ru" rel="noopener">
           АО Портал
         </a>
       </footer>
