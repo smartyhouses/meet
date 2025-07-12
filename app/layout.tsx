@@ -6,18 +6,18 @@ import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: {
-    default: 'LiveKit Meet | Conference app build with LiveKit open source',
+    default: 'Portal Meet',
     template: '%s',
   },
   description:
-    'LiveKit is an open source WebRTC project that gives you everything needed to build scalable and real-time audio and/or video experiences in your applications.',
+    'Portal Meet',
   twitter: {
     creator: '@livekitted',
     site: '@livekitted',
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://meet.livekit.io',
+    url: 'https://www.portalos.ru',
     images: [
       {
         url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-    siteName: 'LiveKit Meet',
+    siteName: 'Portal Meet',
   },
   icons: {
     icon: {
