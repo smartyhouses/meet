@@ -6,21 +6,21 @@ import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Portal Meet',
+    default: 'Портал звонки — аудио и видеозвонки с людьми и ИИ-агентами',
     template: '%s',
   },
   description:
-    'Portal Meet',
+    'Портал звонки — аудио и видеозвонки с людьми и ИИ-агентами',
   twitter: {
     creator: '@livekitted',
     site: '@livekitted',
     card: 'summary_large_image',
   },
   openGraph: {
-    url: 'https://www.portalos.ru',
+    url: 'https://meet.portalos.ru',
     images: [
       {
-        url: 'https://meet.livekit.io/images/livekit-meet-open-graph.png',
+        url: 'https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/Portal_224.png',
         width: 2000,
         height: 1000,
         type: 'image/png',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   icons: {
     icon: {
       rel: 'icon',
-      url: '/favicon.ico',
+      url: 'https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/favicon.ico',
     },
     apple: [
       {
