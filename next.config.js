@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-import type { NextConfig } from 'next'
+//import type { NextConfig } from 'next'
 
 const nextConfig = {
   reactStrictMode: false,
@@ -10,10 +10,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if your project has type errors
     ignoreBuildErrors: true,
   },
   images: {
