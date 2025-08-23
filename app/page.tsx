@@ -168,25 +168,25 @@ export default function Page() {
           <img src="https://raw.githubusercontent.com/sorokinvld/portal-brandpack/refs/heads/main/rings-1_Portal_Base.svg" alt="LiveKit Meet" width="360" height="45" />
           <h2>
             Аудио и видеозвонки с людьми и ИИ{' '}
-            <a href="https://portalos.ru" rel="noopener">
+            <a href="https://www.portalos.ru" rel="noopener">
               Portal&nbsp;OS
             </a>
             ,{' '}
-            <a href="https://portalos.ru" rel="noopener">
+            <a href="https://www.portalos.ru" rel="noopener">
               Portal&nbsp;Cloud
             </a>{' '}
           </h2>
         </div>
-        <Suspense fallback="Loading">
+        <Suspense fallback="Загрузка">
           <Tabs>
-            <DemoMeetingTab label="Demo" />
-            <CustomConnectionTab label="Custom" />
+            <DemoMeetingTab label="Портал-meet" />
+            <CustomConnectionTab label="Свой сервер" />
           </Tabs>
         </Suspense>
       </main>
       <footer data-lk-theme="default">
         Сделано людьми в {' '}
-        <a href="https://portalos.ru" rel="noopener">
+        <a href="https://www.portalos.ru" rel="noopener">
           АО Портал
         </a>
       </footer>
