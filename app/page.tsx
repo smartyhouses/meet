@@ -56,7 +56,7 @@ function DemoMeetingTab(props: { label: string }) {
     <div className={styles.tabContent}>
       <p style={{ margin: 0 }}>Try Portal Meet for free with our live demo project.</p>
       <button style={{ marginTop: '1rem' }} className="lk-button" onClick={startMeeting}>
-        Start Meeting
+        Начать конференцию
       </button>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
@@ -66,11 +66,11 @@ function DemoMeetingTab(props: { label: string }) {
             checked={e2ee}
             onChange={(ev) => setE2ee(ev.target.checked)}
           ></input>
-          <label htmlFor="use-e2ee">Enable end-to-end encryption</label>
+          <label htmlFor="use-e2ee">Активировать защиту шифрованием</label>
         </div>
         {e2ee && (
           <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-            <label htmlFor="passphrase">Passphrase</label>
+            <label htmlFor="passphrase">Пароль</label>
             <input
               id="passphrase"
               type="password"
@@ -106,7 +106,7 @@ function CustomConnectionTab(props: { label: string }) {
   return (
     <form className={styles.tabContent} onSubmit={onSubmit}>
       <p style={{ marginTop: 0 }}>
-        Connect Portal Meet with a custom server using Cloud or local Server.
+        Настройте Портал-meet на своем сервере.
       </p>
       <input
         id="serverUrl"
@@ -131,11 +131,11 @@ function CustomConnectionTab(props: { label: string }) {
             checked={e2ee}
             onChange={(ev) => setE2ee(ev.target.checked)}
           ></input>
-          <label htmlFor="use-e2ee">Enable end-to-end encryption</label>
+          <label htmlFor="use-e2ee">Включить шифрование</label>
         </div>
         {e2ee && (
           <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-            <label htmlFor="passphrase">Passphrase</label>
+            <label htmlFor="passphrase">Пароль</label>
             <input
               id="passphrase"
               type="password"
@@ -154,7 +154,7 @@ function CustomConnectionTab(props: { label: string }) {
         className="lk-button"
         type="submit"
       >
-        Connect
+        Подключиться
       </button>
     </form>
   );
