@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         type: 'image/png',
       },
     ],
-    siteName: 'Portal Meet',
+    siteName: 'Портал Meet',
   },
   icons: {
     icon: {
